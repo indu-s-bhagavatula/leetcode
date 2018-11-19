@@ -1,5 +1,8 @@
-Create table If Not Exists Employee (Id int, Name varchar(255), Salary int, DepartmentId int);
-Create table If Not Exists Department (Id int, Name varchar(255));
+drop table Employee;
+drop table Department;
+Create table Employee (Id int, Name varchar2(255), Salary int, DepartmentId int);
+Create table Department (Id int, Name varchar2(255));
+
 
 insert into Employee (Id, Name, Salary, DepartmentId) values ('1', 'Joe', '70000', '1');
 insert into Employee (Id, Name, Salary, DepartmentId) values ('2', 'Henry', '80000', '2');
